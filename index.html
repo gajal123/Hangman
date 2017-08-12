@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lans="en">
+<head>
+<meta charset="UTF-8">
+<style>
+	canvas{
+		border: 1 px solid black;
+	}
+.inp{
+	width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.sub{
+	 width: 20%;
+    background-color: #F7421B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h1{
+	text-align:center;
+	color: #F7421B;
+    font-family: verdana;
+    font-size: 300%;
+}
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+
+</head>
+<body style="background-color: powderblue">
+<h1> Hangman</h1>
+<div ng-app="myApp" ng-controller="myCtrl">
+	
+<canvas>
+	
+</canvas>
+	
+	<div style="margin-left:400px">
+		<input class="inp" type="text" name="guess", ng-model="input.letter">
+		<button class="sub" ng-click="letterChosen()">submit</button>
+	</div>
+</div>
+
+<script src="app.js"></script>
+<script src="canvas.js"></script>
+
+
+
+</body>
+</html>
